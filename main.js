@@ -13,6 +13,6 @@ const moveBox = _.debounce((cordinateX, cordinateY) => {
   box.style.left = `${cordinateX}px`;
   box.style.top = `${cordinateY}px`;
 }, 1000);//a дебаунс працює як і на уроці нормально тільки треба не рухати мишку 1 секунду
-document.addEventListener('mousemove', (event) => {
+document.addEventListener('mousemove', (event) => {//
   moveBox(event.clientX, event.clientY);
 });
